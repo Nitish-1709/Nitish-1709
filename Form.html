@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  
+<body style="text-align:center;">
+    <h1 style="color:green;">  
+           Registration Form
+        </h1>
+  
+    First Name:
+    <input type="text"
+           id="firstname"><br>
+
+    Last Name:
+    <input type="text"
+           id="lastname"><br>
+  
+    <button type="button" 
+            onclick="myFunction()">
+      Submit
+  </button>
+  
+    <p id="first"></p>
+    <p id="last"></p>
+  
+    <script>
+  
+        function myFunction() {
+            var a = document.getElementById("firstname").value;
+            var b = document.getElementById("lastname").value;
+            
+            document.getElementById("first").innerHTML = a;
+            document.getElementById("last").innerHTML = b;
+        }
+    </script>
+</body>
+  
+</html>
