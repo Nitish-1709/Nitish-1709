@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script language="javascript" type="text/javascript" src="Bootstrap_Task.js"></script>
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body id="body">
+      <form>
+        <div class="container" style="padding: 10px;">
+            <div class="form-row justify-content-md-center">
+              <div class="col">              
+          <div class="alert alert-warning" >            
+            <div class="col"><h1 style="color:Tomato;"> Add New User</h1>
+              </div>
+            </div>            
+          </div>
+          </div>        
+          <div class="row">        
+          <div class="col-md-6"><label for="name">NAME</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter here" aria-label="Enter here">
+          </div>
+          <div class="col-md-6"><label for="email">EMAIL ADDRESS</label>
+            <input type="text" id="email" class="form-control" placeholder="Enter here" aria-label="Enter here">
+          </div>
+          </div>
+          
+          
+          
+          <div class="row">
+            <div class="col-md-6"><label for="contact">CONTACT NUMBER</label>
+              <input type="text" id="contact" class="form-control" placeholder="Enter here" aria-label="Enter here">
+            </div>
+              <div class="col-md-6"><label for="role">ROLE</label>
+                <input type="text" id="role" class="form-control" placeholder="Select" aria-label="Select">
+              </div>
+              </div>
+              
+            
+              
+              <div class="row">
+                <div class="col-md-6"><label for="designation">DESIGNATION</label>
+                  <input type="text" id="designation" class="form-control" placeholder="Select" aria-label="Select">
+                </div>
+                <div class="col-md-6"><label for="password">SET PASSWORD</label>
+                  <input type="text" id="password" class="form-control" placeholder="Enter here" aria-label="Enter here">
+                </div>
+                </div>
+                <br>                       
+                <div class="alert alert-secondary">
+                    Assign Class <br>                    
+                      <div class="row">
+                        <div class="col-md-6"><label for="std">STANDARD</label>
+                          <input type="text" id="std" class="form-control" placeholder="Select" aria-label="Select">
+                          <div id="tempstd"></div>
+                        </div>                        
+                        <div class="col-md-5"><label for="div">DIVISION</label>
+                          <input type="text" id="div" class="form-control" placeholder="Select" aria-label="Select">
+                          <div id="tempdiv"></div>                          
+                        </div>
+                        <div class="col-md-1" style="height: 6px;">
+                        <div id="tempminus"></div>
+                      </div>
+                        </div>                     
+                        <div class="center">
+                          <p type="button" class="fa fa-plus-circle" style="font-size:40px;color:red;" onclick="add()"></p>
+                        </div>                      
+               </div>             
+               <div class="butt">
+                <button type="button" class="btn btn-danger" style="margin-right: 10px; width: 100px;" onclick="sub()">SAVE</button>
+                <button type="button" class="btn btn-outline-danger " style="width: 100px;">Close</button>              
+              </div>
+            </div>
+      </form>
+      <style>
+        
+.center {
+  
+  text-align: right;
+}
+
+.fa {
+  width: 40px;
+  position: relative;
+  top: 10px;
+  margin-right: 5px;
+}
+
+.butt {
+  text-align: center;
+}
+
+    </style>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
